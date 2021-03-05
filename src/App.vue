@@ -1,10 +1,14 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Posts />
 </template>
+
+<script>
+import Posts from './components/Posts.vue'
+export default {
+  name: 'App',
+  components: { Posts }
+}
+</script>
 
 <style>
 #app {
